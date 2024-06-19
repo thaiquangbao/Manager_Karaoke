@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7b0f6912-a47c-4500-91f0-1868ba0f013b">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="ma_P" class="java.lang.String"/>
+	<field name="ten_P" class="java.lang.String"/>
+	<field name="gia_P" class="java.lang.String"/>
+	<field name="loai_p" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="91" splitType="Stretch">
+			<staticText>
+				<reportElement x="80" y="0" width="401" height="31" uuid="398be96a-7eb3-4bc5-a7cc-9c77ada61544"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="20"/>
+				</textElement>
+				<text><![CDATA[Danh Sách Phòng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="110" height="19" uuid="cb109372-250d-41f6-87b1-8d3fda75e758"/>
+				<textElement textAlignment="Left">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Tên Nhân Viên     :  ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="70" width="109" height="21" uuid="ea1224ee-c40d-45f3-9036-1f5c8b6004b3"/>
+				<textElement textAlignment="Left">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Địa Chỉ                 :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="70" width="420" height="21" uuid="abc214a2-ec64-4b4f-9274-a7a29e9a7868"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[12 Nguyễn Văn Bảo,Phường 11,Quận Gò Vấp ,Thành Phố Hồ Chí Minh]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="40" width="130" height="20" uuid="70831f52-556f-41ed-a614-971e4826e4de"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Vũ Tiến Đức]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="5" width="111" height="21" uuid="f4e338cb-b9d2-4b3b-ab0c-477f9806a688"/>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Mã Phòng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="149" y="5" width="111" height="21" uuid="9081c38d-1f23-4843-8345-8f7f4195dd7a"/>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Tên Phòng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="5" width="111" height="21" uuid="217764ab-fad0-4e6f-886d-9074c7a33d1f"/>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Giá Phòng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="450" y="5" width="111" height="21" uuid="b76f94b0-6be9-46c8-bb21-989ce2150043"/>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Loại Phòng]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="26" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="110" height="19" uuid="01ebac20-2521-455e-8af1-d77e51aa995b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="96295ff3-113e-4046-b1ca-a8ddeaa473ef"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ma_P}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="150" y="0" width="110" height="18" uuid="636cdb1d-63d4-4bdd-9f7f-cd8208f0c6b6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5bb86a19-ce82-46d0-94bf-e2117646b6f3"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ten_P}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="0" width="111" height="18" uuid="d758ea33-91d3-47d8-9dab-d988014851c3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="74daa085-abd6-47ce-a8c9-1cc2ed6682f5"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{gia_P}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="0" width="111" height="18" uuid="6fadde6d-7340-4304-97e9-72dab58ad064">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f0ea4abb-2250-4604-b41a-47d515545b63"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{loai_p}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="thonKe_KH" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5a8978f4-c5b8-4b8b-9e61-873480ba224a">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="tongSo_KH" class="java.lang.String"/>
+	<field name="tongTien_HD" class="java.lang.String"/>
+	<field name="ma_KH" class="java.lang.String"/>
+	<field name="ten_KH" class="java.lang.String"/>
+	<field name="diaChi_KH" class="java.lang.String"/>
+	<field name="sDT_KH" class="java.lang.String"/>
+	<field name="tongTien_HDTB" class="java.lang.String"/>
+	<field name="Field_8" class="java.lang.String"/>
+	<field name="Field_9" class="java.lang.String"/>
+	<field name="tngay_LTK" class="java.lang.String"/>
+	<field name="dngay_LTK" class="java.lang.String"/>
+	<field name="loai_TK" class="java.lang.String"/>
+	<variable name="dngay_LTK1" class="java.lang.Integer" resetType="Page" calculation="Count">
+		<variableExpression><![CDATA[$F{dngay_LTK}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="44" splitType="Stretch">
+			<staticText>
+				<reportElement x="120" y="0" width="316" height="38" uuid="c823e317-a299-40d7-bfb0-2a201eff6cd2"/>
+				<textElement textAlignment="Center">
+					<font fontName="Cambria" size="20"/>
+				</textElement>
+				<text><![CDATA[Thống Kê Khách Hàng]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="93" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="10" width="180" height="23" uuid="dab97e0b-d080-4ee3-b3bb-0c6a89294350"/>
+				<textElement textAlignment="Left">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Từ Ngày      		     : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="10" width="140" height="23" uuid="a50e48be-2d37-4981-818a-0ea72722b119"/>
+				<textElement textAlignment="Left">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Đến Ngày                  : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="150" height="23" uuid="9dfa286e-4e17-46b5-91e1-01ac24f89661"/>
+				<textElement textAlignment="Left">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Loại Thống Kê            : ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="190" y="10" width="90" height="23" uuid="1edec15d-d063-44e4-a2c0-220c038aa92f"/>
+				<textElement verticalAlignment="Middle">
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tngay_LTK}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="441" y="10" width="95" height="23" uuid="3c53c74d-11fe-463d-bd3b-988738576e97">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b208476a-306a-4466-9665-8caee66f6eee"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dngay_LTK}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="150" y="40" width="139" height="22" uuid="57932cde-f791-4953-bf75-4696a72bc214">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="86131fbd-4af0-45d9-a7bd-b52c27ba6a0a"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{loai_TK}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="40" width="272" height="22" uuid="67ac903a-d6ac-44e1-a747-1ccf2e7df2be">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a21f76b2-b7c1-4f0e-bc70-9b908f37ca6b"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tongSo_KH}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="71" width="260" height="22" uuid="70dfbc4e-59bc-42f5-8e34-a2146faab86f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6a43e035-b31a-4d39-abc8-9a06fe3d9584"/>
+				</reportElement>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tongTien_HD}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement x="-10" y="4" width="111" height="21" uuid="96c20797-8bde-4b64-9c3a-ef8a62716d36"/>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Mã Khách Hàng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="5" width="99" height="21" uuid="b6642059-bd00-4679-b13b-861561bed886"/>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Tên Khách Hàng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="5" width="99" height="21" uuid="37db6478-42ea-4f49-b0b1-6832ddcb47f3"/>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Địa Chỉ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="5" width="111" height="20" uuid="3891ada4-581b-413d-be94-884b84c4421a"/>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Số Điện Thoại]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="450" y="5" width="124" height="20" uuid="fef68107-cfbe-43b0-a0a6-5b5a5de318fa"/>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Tổng Tiền Hóa Đơn]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="19" uuid="08154eb2-d82c-4964-90b4-93b529c92a02">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0cb0e86a-0115-4f1f-8d75-8dad45840cc4"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ma_KH}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="0" width="98" height="19" uuid="03cdfb6f-c221-40f7-ad93-0ab1974f8569">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9e1dbe82-c79e-4512-9bce-057ceac1e7f1"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ten_KH}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="0" width="96" height="19" uuid="2343161a-be1b-49bc-85a6-74b5975ca3a9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="774008e8-8bb7-4452-bf9c-a688b4eba631"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{diaChi_KH}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="333" y="0" width="107" height="19" uuid="0e7965f6-3bba-4d9c-94a2-e1feb547e019">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ed99993f-39bf-4827-9fc7-b770dafceb38"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sDT_KH}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="0" width="123" height="19" uuid="a095627c-5839-4e23-8a0d-a63bfed4c59b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cbb8aa9d-45ba-432f-9624-c4721671006d"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tongTien_HDTB}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

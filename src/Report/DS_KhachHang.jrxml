@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="deab3c80-351f-43e5-b650-3785fdf8f6e7">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="ma_KH" class="java.lang.String"/>
+	<field name="ten_KH" class="java.lang.String"/>
+	<field name="diachi_KH" class="java.lang.String"/>
+	<field name="sdt_KH" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="91" splitType="Stretch">
+			<staticText>
+				<reportElement x="80" y="0" width="401" height="31" uuid="f68b9b09-5a87-4c85-8a2b-fb9967c8f34f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="20"/>
+				</textElement>
+				<text><![CDATA[Danh Sách Khách Hàng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="110" height="19" uuid="a2cec417-2a2a-433f-92fc-e6760b0283c0"/>
+				<textElement textAlignment="Left">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Tên Nhân Viên     :  ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="70" width="109" height="21" uuid="daee4641-a657-4d6e-8917-8a8dea79c51b"/>
+				<textElement textAlignment="Left">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Địa Chỉ                 :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="70" width="420" height="21" uuid="0e241710-e8fe-4fdf-97c7-8abc675cb920"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[12 Nguyễn Văn Bảo,Phường 11,Quận Gò Vấp ,Thành Phố Hồ Chí Minh]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="40" width="130" height="20" uuid="f0a5b2c5-5942-48dd-91f3-f00d3bd77692"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Vũ Tiến Đức]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="5" width="111" height="21" uuid="5886e9fb-cb55-4338-adf8-88cfc4f959d4"/>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Mã Khách Hàng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="149" y="5" width="111" height="21" uuid="6149fdf2-db66-4029-9e6c-0f8f95f9d06e"/>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Tên Khách Hàng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="5" width="111" height="21" uuid="4447f2fc-01f7-4396-98bd-88bb8557189f"/>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Địa Chỉ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="450" y="5" width="111" height="21" uuid="94c61ee7-953b-477c-b11e-5a20698ddca2"/>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Số Điện Thoại]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="111" height="20" uuid="f96eb005-07a9-4a03-93cb-2626c3d9dc48">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="beb8f27f-8b27-471b-ba30-37c63c45599e"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ma_KH}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="149" y="0" width="109" height="20" uuid="7402ebf0-28f7-4265-aa6d-60055d9f48ec">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d8106e87-7589-46e5-b1fd-76672f593a38"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ten_KH}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="0" width="111" height="20" uuid="bf944363-9d3d-41e0-8571-3213974f8292">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a8517e1a-10b1-48a6-901b-add1fb403ead"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{diachi_KH}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="0" width="111" height="20" uuid="8a135fc1-fd1b-46d8-ac86-d4526eb51a7c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e8979059-988d-441d-824f-0364fc027e87"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sdt_KH}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

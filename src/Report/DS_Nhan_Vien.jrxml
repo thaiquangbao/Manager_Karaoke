@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4a63fd2f-e189-422a-a724-7676c1786daf">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="ma_NV" class="java.lang.String"/>
+	<field name="ten_NV" class="java.lang.String"/>
+	<field name="diachi_NV" class="java.lang.String"/>
+	<field name="sdt_NV" class="java.lang.String"/>
+	<field name="chucvu_NV" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="91" splitType="Stretch">
+			<staticText>
+				<reportElement x="80" y="0" width="401" height="31" uuid="c7df1bb6-8ef0-4fd1-8839-00bb27391ba4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="20"/>
+				</textElement>
+				<text><![CDATA[Danh Sách Nhân Viên]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="110" height="19" uuid="720eef6d-fbe9-4968-b2a7-654de7d4a85c"/>
+				<textElement textAlignment="Left">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Tên Nhân Viên     :  ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="70" width="109" height="21" uuid="15c0bdf2-f98a-4e4f-bd24-ef3b1d05f1dc"/>
+				<textElement textAlignment="Left">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Địa Chỉ                 :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="70" width="420" height="21" uuid="fcdac2f1-5922-4de3-be93-cd6ad418e430"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[12 Nguyễn Văn Bảo,Phường 11,Quận Gò Vấp ,Thành Phố Hồ Chí Minh]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="40" width="130" height="20" uuid="84634c4d-59c3-4e57-a7fa-b3f794ae082f"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Vũ Tiến Đức]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="29" splitType="Stretch">
+			<staticText>
+				<reportElement x="-10" y="4" width="111" height="21" uuid="16a8e9af-09d3-451e-87a9-2a0b09a67c07"/>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Mã Nhân Viên]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="5" width="99" height="21" uuid="5ab76739-c1c7-4c52-9e9d-2585b5e284a6"/>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Tên Nhân Viên]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="5" width="99" height="21" uuid="18424534-7b0a-495a-802c-793c596d64f6"/>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Địa Chỉ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="5" width="111" height="20" uuid="8d95edc4-8d86-4493-8cb5-aa63bc438d84"/>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Số Điện Thoại]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="450" y="5" width="111" height="20" uuid="b9b2a90d-b116-4f5c-bb0c-470be19b3e56"/>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Chức Vụ]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="22">
+			<textField>
+				<reportElement x="0" y="0" width="101" height="20" uuid="c77d3584-3eac-4b05-a449-026c4f338338">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c92b0130-2ab7-4f49-ace4-cbcb99b60f41"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{ma_NV}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="0" width="98" height="20" uuid="2978c5d5-4f5f-4988-b3d1-9a3e2c5fa1ca">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ae4b7334-256b-4e13-8000-b75d8f9a66bf"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{ten_NV}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="0" width="96" height="20" uuid="3003982a-229d-4d03-b421-a0eb5ba91bea">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7e53eaaf-2cbf-474e-9658-9e39616c10d1"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{diachi_NV}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="333" y="0" width="108" height="20" uuid="a66ee97e-b32b-4f15-871f-03d0c221fa70">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="37dac3ef-1e14-4954-927d-d5bbe3c4cb6d"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{sdt_NV}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="0" width="111" height="20" uuid="9f942065-25a8-4a51-a0b7-a23aaede6cd2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="647ddadd-2419-4939-94c9-b661f58b921b"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{chucvu_NV}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
